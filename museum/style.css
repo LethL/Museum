@@ -22,7 +22,7 @@ h6 {
 }
 
 p {
-    margin: 0 0 10px 0;
+    margin: 0 0 0 0;
 }
 
 ul {
@@ -148,4 +148,93 @@ ul {
 
 .welcome__btn:hover {
     background: #9d8665;
+}
+
+
+/* Visiting
+************* */
+
+.visiting {
+    background: #FFFFFF;
+    height: 1265px;
+    padding: 75px 0;
+}
+
+.title--visiting {
+    color: #9D8665;
+    position: relative;
+    margin-bottom: 103px;
+}
+
+.title--visiting::after {
+    content: "";
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #710707;
+}
+
+.visiting__cards {
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 78px;
+    column-gap: 60px;
+}
+
+.cards__item {
+    display: block;
+    width: 440px;
+    height: 422px;
+    cursor: pointer;
+    transition: opacity .1s linear;
+}
+
+.cards__item:hover {
+    opacity: .7;
+}
+
+.card__photo {
+    width: 440px;
+    height: 285px;
+}
+
+.card__title {
+    font-family: Forum;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #000;
+    position: relative;
+    margin-top: 20px;
+}
+
+.card__title::after {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    right: 140px;
+    height: 2px;
+    background-color: #710707;
+}
+
+.card__subtitle {
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000;
+    margin-top: 22px;
+}
+
+.card__text {
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000;
+    margin-top: 8px;
 }
