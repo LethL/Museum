@@ -121,6 +121,48 @@
                 </div>
             </div>
         </section>
+        <section class="tickets">
+            <div class="wrapper">
+                <h2 class="title title--tickets">Buy tickets</h2>
+                <div class="tickets__inner">
+                    <img class="tickets__picture" src="assets/img/tickets-pic.jpg" alt="tickets-picture">
+                    <form class="tickets__form" action="#">
+                        <div class="form__btns">
+                            <h4 class="form__title">Ticket Type</h4>
+                            <label class="btns__container">Permanent exhibition
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="btns__container">Temporary exhibition
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="btns__container">Combined Admission
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="form__amount">
+                            <h4 class="form__title form__title--amount">Amount</h4>
+                            <p class="amount__name">Basic 18+</p>
+                            <div class="amount__value">
+                                <button class="amount__btn" type="button" onclick="this.nextElementSibling.stepDown()"><img src="assets/svg/–.svg" alt="-"></button>
+                                <input type="number" min="0" max="20" value="1" class="amount__num">
+                                <button class="amount__btn" type="button" onclick="this.previousElementSibling.stepUp()"><img src="assets/svg/+.svg" alt="+"></button>
+                            </div>
+                            <p class="amount__name">Senior 65+</p>
+                            <div class="amount__value">
+                                <button class="amount__btn" type="button" onclick="this.nextElementSibling.stepDown()"><img src="assets/svg/–.svg" alt="-"></button>
+                                <input type="number" min="0" max="20" value="1" class="amount__num">
+                                <button class="amount__btn" type="button" onclick="this.previousElementSibling.stepUp()"><img src="assets/svg/+.svg" alt="+"></button>
+                            </div>
+                            <h4 class="form__title form__title--price">Total €220</h4>
+                        </div>
+                        <button class="form__btn">Buy Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
 <script src="app.js"></script>
