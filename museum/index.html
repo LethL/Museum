@@ -18,33 +18,33 @@
             <nav>
                 <ul class="header__nav">
                     <li>
-                        <a class="nav__item" href="">Visiting</a>
+                        <a class="nav__item" href="#visiting">Visiting</a>
                     </li>
                     <li >
-                        <a class="nav__item" href="">Explore</a>
+                        <a class="nav__item" href="#explore">Explore</a>
                     </li>
                     <li >
-                        <a class="nav__item" href="">Video</a>
+                        <a class="nav__item" href="#video">Video</a>
                     </li>
                     <li>
-                        <a class="nav__item" href="">Tickets</a>
+                        <a class="nav__item" href="#tickets">Tickets</a>
                     </li>
                     <li>
-                        <a class="nav__item" href="">Contacts</a>
+                        <a class="nav__item" href="#contacts">Contacts</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="welcome">
+        <section id="welcome" class="welcome">
             <div class="wrapper">
                 <h2 class="title">Welcome <br> to the Louvre</h2>
                 <h4 class="welcome__subtitle">From the castle to the museum</h4>
                 <button class="welcome__btn" href="#">Discover the Louvre</button>
             </div>
         </section>
-        <section class="visiting">
+        <section id="visiting" class="visiting">
             <div class="wrapper">
                 <h2 class="title title--visiting">Virtual tour</h2>
                 <div class="visiting__cards">
@@ -87,7 +87,7 @@
                 </div>
             </div>
         </section>
-        <section class="explore">
+        <section id="explore" class="explore">
             <div class="wrapper">
                 <div class="explore__inner">
                     <div class="explore__info">
@@ -100,7 +100,7 @@
                 </div>
             </div>
         </section>
-        <section class="video">
+        <section id="video" class="video">
             <div class="wrapper">
                 <div class="video__content">
                     <button class="play"><img src="assets/svg/big-play.svg" alt="play"></button>
@@ -121,7 +121,7 @@
                 </div>
             </div>
         </section>
-        <section class="tickets">
+        <section id="tickets" class="tickets">
             <div class="wrapper">
                 <h2 class="title title--tickets">Buy tickets</h2>
                 <div class="tickets__inner">
@@ -163,8 +163,68 @@
                 </div>
             </div>
         </section>
+        <section id="contacts" class="contacts">
+            <div class="wrapper">
+                <h2 class="title title--visiting">Contacts</h2>
+                <div class="contacts__inner">
+                    <div class="contacts__address">
+                        <p class="contacts__name">Palais Royal <br> Musee du Louvre </p>
+                        <address class="address__info">address: 75001 Paris, France</address>
+                        <address class="address__info">phone: +33(0) 1 40 20 50 50</address>
+                        <address class="address__info">mail: info@louvre.fr</address>
+                    </div>
+                    <img class="contacts__map" src="assets/img/map.png" alt="map">
+                </div>
+            </div>
+        </section>
     </main>
-
+    <footer class="footer">
+        <div class="wrapper wrapper--footer">
+            <div class="header__logo header__logo--footer">
+                <img class="footer__logo" src="assets/svg/header_logo.svg" alt="footer-logo">
+                <h5 class="header__title">Louvre</h5>
+            </div>
+            <nav>
+                <ul class="header__nav header__nav--footer">
+                    <li>
+                        <a class="nav__item" href="#welcome">Welcome</a>
+                    </li>
+                    <li>
+                        <a class="nav__item" href="#visiting">Visiting</a>
+                    </li>
+                    <li >
+                        <a class="nav__item" href="#explore">Explore</a>
+                    </li>
+                    <li >
+                        <a class="nav__item" href="#video">Video</a>
+                    </li>
+                    <li>
+                        <a class="nav__item" href="#tickets">Tickets</a>
+                    </li>
+                    <li>
+                        <a class="nav__item" href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="footer__social">
+                <li>
+                    <a class="social__link" href="#"><img class="social__icon" src="assets/svg/social-tube.svg" alt="youtube"></a>
+                </li>
+                <li>
+                    <a class="social__link" href="#"><img class="social__icon" src="assets/svg/social-inst.svg" alt="inst"></a>
+                </li>
+                <li>
+                    <a class="social__link" href="#"><img class="social__icon" src="assets/svg/social-fb.svg" alt="fb"></a>
+                </li>
+                <li>
+                    <a class="social__link" href="#"><img class="social__icon" src="assets/svg/social-pin.svg" alt="twitter"></a>
+                </li>
+                <li>
+                    <a class="social__link" href="#"><img class="social__icon" src="assets/svg/social-twitter.svg" alt="pin"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 <script src="app.js"></script>
 </body>
 </html>
