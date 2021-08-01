@@ -91,11 +91,11 @@ ul {
     letter-spacing: 2px;
     color: #FFF;
     text-decoration: none;
-    transition: opacity linear .1s;
+    transition: linear .1s;
 }
 
 .nav__item:hover {
-    opacity: .5;
+    color: #9D8665;
 }
 
 
@@ -168,6 +168,7 @@ ul {
     color: #9D8665;
     position: relative;
     margin-bottom: 103px;
+    transition: .1s linear;
 }
 
 .title--visiting::after {
@@ -193,7 +194,8 @@ ul {
     width: 440px;
     height: 422px;
     cursor: pointer;
-    transition: opacity .1s linear;
+    transition: .1s linear;
+    text-decoration: none;
 }
 
 .cards__item:hover {
@@ -225,6 +227,11 @@ ul {
     right: 140px;
     height: 2px;
     background-color: #710707;
+    transition: .2s linear;
+}
+
+.cards__item:hover h3::after {
+    right: 0;
 }
 
 .card__subtitle {
@@ -712,11 +719,12 @@ input[type="number"]:hover,
     box-sizing: border-box;
     filter: drop-shadow(0px 0px 0px #666666);
     position: relative;
-    transition: border .1s linear;
+    transition: .1s linear;
 }
 
 .social__link:hover {
     border: 1px solid #9d8665;
+    filter: invert(56%) sepia(34%) saturate(364%) hue-rotate(356deg) brightness(90%) contrast(84%);
 }
 
 .footer__social {
@@ -732,9 +740,5 @@ input[type="number"]:hover,
     top: 50%;
     left: 50%;
     transform:translate(-50%, -50%);
-    transition: opacity .1s linear;
-}
-
-.social__icon:hover {
-    opacity: .5;
+    transition: .1s linear;
 }
